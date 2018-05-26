@@ -7,7 +7,6 @@ http.get(url, (response) =>{
     response.on('data',(chunk) => {
         rawData = rawData + chunk;
     });
-
     response.on('end', () => {
         console.log(rawData);
     });

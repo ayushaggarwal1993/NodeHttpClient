@@ -8,6 +8,7 @@ http.get(url, (response) =>{
         numOfChunks++;
         console.log(chunk.toString('utf8'));
     });
+    
     response.on('end', () =>{
         console.log(`Response has ended with ${numOfChunks} chunks`);
     });
